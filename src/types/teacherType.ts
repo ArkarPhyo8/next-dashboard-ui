@@ -1,3 +1,5 @@
+import { Class, Subject, Teacher } from "@prisma/client";
+
 export interface TeacherType {
   id: number;
   teacherId: string;
@@ -9,3 +11,7 @@ export interface TeacherType {
   classes: string[];
   address: string;
 }
+
+export type TeacherListType = Teacher & { subjects: Subject[] } & {
+  classes: Class[];
+};

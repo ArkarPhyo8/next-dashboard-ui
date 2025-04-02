@@ -1,8 +1,3 @@
-export interface ParentType {
-  id: number;
-  name: string;
-  email?: string;
-  students: string[];
-  phone: string;
-  address: string;
-}
+import { Parent, Student } from "@prisma/client";
+
+export type ParentListType = Parent & { students: Student[] };

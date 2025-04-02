@@ -1,5 +1,3 @@
-export interface SubjectType {
-  id: number;
-  name: string;
-  teachers: string[];
-}
+import { Subject, Teacher } from "@prisma/client";
+
+export type SubjectListType = Subject & { teacher: Teacher[] };

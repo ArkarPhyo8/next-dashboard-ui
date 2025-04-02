@@ -1,17 +1,15 @@
-
 import {
   AnnouncementType,
   AssignmentType,
-  ClassType,
+  ClassListType,
   EventType,
   ExamType,
-  LessonType,
-  ParentType,
+  lessonListType,
+  ParentListType,
   ResultType,
-  StudentType,
-  SubjectType,
+  StudentListType,
+  SubjectListType,
   TeacherListType,
-  TeacherType,
 } from "@/types";
 import React from "react";
 
@@ -19,11 +17,11 @@ interface TableProps {
   columns: { header: string; accessor: string; className?: string }[];
   data:
     | TeacherListType[]
-    | StudentType[]
-    | ParentType[]
-    | SubjectType[]
-    | ClassType[]
-    | LessonType[]
+    | StudentListType[]
+    | ParentListType[]
+    | SubjectListType[]
+    | ClassListType[]
+    | lessonListType[]
     | ExamType[]
     | AssignmentType[]
     | ResultType[]

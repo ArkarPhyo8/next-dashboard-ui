@@ -1,7 +1,3 @@
-export interface ClassType {
-  id: number;
-  name: string;
-  capacity: number;
-  grade: number;
-  supervisor: string;
-}
+import { Class, Teacher } from "@prisma/client";
+
+export type ClassListType= Class & { supervisor: Teacher | null }

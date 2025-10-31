@@ -1,5 +1,4 @@
 import Announcements from "@/components/Announcements";
-import BigCalendar from "@/components/BigCalendar";
 import React from "react";
 
 const ParentPage = () => {
@@ -9,7 +8,7 @@ const ParentPage = () => {
       <div className="w-full xl:w-2/3">
         <div className="h-full bg-white p-4 rounded-md">
           <h1 className="text-xl font-semibold">Schedule (John Doe)</h1>
-          <BigCalendar />
+          {/* <BigCalendarContainer /> */}
         </div>
       </div>
       {/* RIGHT */}

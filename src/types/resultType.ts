@@ -1,10 +1,12 @@
-export interface ResultType {
+
+export type CustomResultType = {
   id: number;
-  subject: string;
-  class: string;
-  teacher: string;
-  student: string;
-  type: "exam" | "assignment";
-  date: string;
+  title: string;
+  studentName: string;
+  studentSurname: string;
+  teacherName: string;
+  teacherSurname: string;
   score: number;
-}
+  className: string;
+  startTime: Date;
+};

@@ -1,6 +1,3 @@
-export interface AnnouncementType {
-  id: number;
-  title: string;
-  class: string;
-  date: string;
-}
+import { Announcement, Class } from "@prisma/client";
+
+export type AnnouncementListType = Announcement & { class: Class | null };

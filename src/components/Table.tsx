@@ -1,12 +1,12 @@
 import {
-  AnnouncementType,
+  AnnouncementListType,
   AssignmentType,
   ClassListType,
-  EventType,
-  ExamType,
+  CustomResultType,
+  EventListType,
+  ExamListType,
   lessonListType,
   ParentListType,
-  ResultType,
   StudentListType,
   SubjectListType,
   TeacherListType,
@@ -22,11 +22,11 @@ interface TableProps {
     | SubjectListType[]
     | ClassListType[]
     | lessonListType[]
-    | ExamType[]
+    | ExamListType[]
     | AssignmentType[]
-    | ResultType[]
-    | AnnouncementType[]
-    | EventType[];
+    | CustomResultType[]
+    | AnnouncementListType[]
+    | EventListType[];
   renderRow: (item: any) => React.ReactNode;
 }
 const Table = ({ columns, data, renderRow }: TableProps) => {
